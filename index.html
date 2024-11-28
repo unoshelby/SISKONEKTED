@@ -357,6 +357,12 @@
                 document.getElementById("response-modal").style.display = "none";
                 chatMessages.scrollTop = chatMessages.scrollHeight;
             }
+	 }
+
+        // Function to notify the user when they click on the chat button
+        function openChat(partner) {
+            alert("You are now talking to a " + partner + ". Click the chat icon below to start the conversation.");
+        }	
         }
     </script>
 
