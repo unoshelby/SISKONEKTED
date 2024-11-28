@@ -297,7 +297,7 @@
         <button class="close-response-modal" onclick="sendResponse()">Send Response</button>
     </div>
 
-    <script>
+   <script>
         // Your existing JavaScript remains here
         function openPrivacyModal() {
             document.getElementById("privacy-modal").style.display = "block";
@@ -316,8 +316,9 @@
         }
 
         function openChat(partner) {
+            document.getElementById("chatbox").style.display = "flex";
+            document.getElementById("chatHeader").innerText = "Chat with " + partner;
             alert("You are now talking to a " + partner + ". Click the chat icon below to start the conversation.");
-        	
         }
 
         function sendMessage() {
@@ -356,14 +357,8 @@
                 document.getElementById("response-modal").style.display = "none";
                 chatMessages.scrollTop = chatMessages.scrollHeight;
             }
-	 
-
-      
-        
         }
     </script>
-
-
     
 
 	<!--Start of Tawk.to Script-->
